@@ -2,7 +2,7 @@
   "name": "@marcus-rise/next-api-interceptor",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "nextjs api interceptor",
+  "description": "Interceptor for serverless nextjs api",
   "author": {
     "name": "Ilya Konstantinov",
     "email": "ilya.konstantinov2022@mail.ru",
