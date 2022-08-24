@@ -35,9 +35,10 @@
   },
   "homepage": "https://github.com/Marcus-Rise/next-api-interceptor",
   "keywords": [
-    "next",
+    "nextjs",
     "api",
-    "interceptor"
+    "interceptor",
+    "serverless"
   ],
   "devDependencies": {
     "@rbnlffl/rollup-plugin-eslint": "^3.0.0",
