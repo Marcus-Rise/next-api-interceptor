@@ -1,0 +1,63 @@
+{
+  "name": "@marcus-rise/next-api-interceptor",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "nextjs api interceptor",
+  "author": {
+    "name": "Ilya Konstantinov",
+    "email": "ilya.konstantinov2022@mail.ru",
+    "url": "https://ilya-konstantinov.ru"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "jest",
+    "rollup": "rollup --config rollup.config.ts --configPlugin typescript",
+    "build": "yarn rollup",
+    "prebuild": "rimraf dist",
+    "dev": "yarn build --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcus-Rise/next-api-interceptor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marcus-Rise/next-api-interceptor/issues"
+  },
+  "homepage": "https://github.com/Marcus-Rise/next-api-interceptor",
+  "keywords": [
+    "next",
+    "api",
+    "interceptor"
+  ],
+  "devDependencies": {
+    "@rbnlffl/rollup-plugin-eslint": "^3.0.0",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/jest": "^28.1.8",
+    "@typescript-eslint/eslint-plugin": "5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.7.4",
+    "next": "^12.2.5"
+  }
+}
